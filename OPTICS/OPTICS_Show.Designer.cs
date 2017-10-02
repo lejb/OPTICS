@@ -1,6 +1,8 @@
-﻿namespace OPTICS
+﻿using System.Windows.Forms;
+
+namespace OPTICS_Clustering
 {
-    partial class Form1
+    partial class FormShow : Form
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -30,13 +32,15 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // FormShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 743);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(563, 396);
+            this.Name = "FormShow";
+            this.Text = "OPTICS_SHOW";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormShow_KeyPress);
             this.ResumeLayout(false);
 
         }
